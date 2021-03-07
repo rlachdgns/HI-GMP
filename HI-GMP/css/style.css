@@ -1,24 +1,24 @@
 a {
   text-decoration: none;
   cursor: grab;
-  target: _blank;
 }
 
 /* unvisited link */
 a:link {
-  color: black;
+  color: #487e95;
 }
 
 /* visited link */
 a:visited {
-  color: black;
+  color: #487e95;
 }
 
 /* mouse over link */
 a:hover {
-  background: #dddddd;
+  background: #d6efc7;
   border-radius: 100px;
   padding:5px;
+  color: #184d47;
 }
 
 /* selected link */
@@ -26,9 +26,17 @@ a:active {
   color: gray;
 }
 
+
 body {
-  background-color: #f9f3f3;
+  background-color: #ccf2f4;
+  color: #487e95;
 }
+body.indexbody{
+  text-align: center;
+
+
+}
+
 div.header {
   margin: 5px;
   padding: 5px;
@@ -36,7 +44,13 @@ div.header {
   text-align: center;
     border-radius: 20px;
 }
-
+div.middle-container {
+  margin-top:50px;
+}
+div.bottom-container {
+  margin-top:50px;
+  margin-bottom: 50px;
+}
 div.grid-container1 {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
@@ -78,7 +92,40 @@ img {
   margin-top: 50px;
   width: 50%;
 }
+img.HI-GMP-Suna1 {
+  height:80px;
+  width: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 200px;
+
+}
+img.HI-GMP-Suna2 {
+  height:300px;
+  width: 70%;
+  display: block;
+}
 
 li {
   padding-bottom:4px;
+}
+
+hr {
+
+  border: 10px dotted;
+  border-top:0;
+  display: inline-block;
+  width: 200px;
+  margin-top: 100px;
+  color: #dddddd;
+
+
+}
+h1 {
+  color: #487e95;
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
