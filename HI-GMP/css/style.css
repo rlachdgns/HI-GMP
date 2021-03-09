@@ -20,7 +20,9 @@ a:hover {
   padding:5px;
   color: #184d47;
 }
-
+a.index:hover {
+  background: none;
+}
 /* selected link */
 a:active {
   color: gray;
@@ -30,6 +32,8 @@ a:active {
 body {
   background-color: #ccf2f4;
   color: #487e95;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
 }
 body.indexbody{
   text-align: center;
@@ -38,23 +42,32 @@ body.indexbody{
 }
 
 div.header {
-  margin: 5px;
+
   padding: 5px;
-  border: solid 2px black;
+  border: 2px solid black;
+  border-bottom: none;
   text-align: center;
-    border-radius: 20px;
+
+    position: relative;
 }
 div.middle-container {
   margin-top:50px;
+
+
 }
 div.bottom-container {
   margin-top:50px;
   margin-bottom: 50px;
 }
 div.grid-container1 {
+  position: sticky;
+  top: 0;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   text-align: center;
+  border: solid 2px black;
+  margin: 0;
+  background-color: #ccf2f4;
 
 }
 
@@ -95,17 +108,20 @@ img {
 img.HI-GMP-Suna1 {
   height:80px;
   width: 80px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
   display: inline-block;
-  position: absolute;
-  left: 200px;
+  position: relative;
+  top: 8px;
+  border-radius: 40px;
 
 }
 img.HI-GMP-Suna2 {
   height:300px;
   width: 70%;
   display: block;
+  border: solid 2px white;
+  border-radius: 1000px;
 }
 
 li {
@@ -126,6 +142,11 @@ hr {
 h1 {
   color: #487e95;
   display: inline-block;
-  margin-top: 40px;
-  margin-bottom: 40px;
+
+  position: relative;
+  top: -20px;
+  left: 13px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Gamja Flower', cursive;
 }
