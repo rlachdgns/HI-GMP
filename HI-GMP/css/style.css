@@ -14,26 +14,43 @@ a:visited {
 }
 
 /* mouse over link */
-a:hover {
-  background: #d6efc7;
+
+a.category1_link:hover {
+  background: #e7e6e1;
   border-radius: 100px;
-  padding:5px;
+  padding:8px;
   color: #184d47;
 }
-a.index:hover {
-  background: none;
+
+a.category2_link:hover {
+  background: #e7e6e1;
+  border-radius: 0;
+  display: block;
+
+  margin: 0;
+  color: #184d47;
 }
+
 /* selected link */
 a:active {
   color: gray;
 }
 
+a.current {
+  background: #e7e6e1;
+  border-radius: 0;
+  display: block;
+
+  margin: 0;
+  color: #184d47;
+}
 
 body {
-  background-color: #ccf2f4;
+  background-color: #f6f6f6;
   color: #487e95;
   font-family: 'Noto Sans KR', sans-serif;
   margin: 0;
+  font-weight: bold;
 }
 body.indexbody{
   text-align: center;
@@ -44,7 +61,7 @@ body.indexbody{
 div.header {
 
   padding: 5px;
-  border: 2px solid black;
+
   border-bottom: none;
   text-align: center;
 
@@ -59,39 +76,41 @@ div.bottom-container {
   margin-top:50px;
   margin-bottom: 50px;
 }
-div.grid-container1 {
+div.category1 {
   position: sticky;
   top: 0;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   text-align: center;
-  border: solid 2px black;
-  margin: 0;
-  background-color: #ccf2f4;
+  border-top: solid 2px gray;
+  border-bottom: solid 2px gray;
+  margin: 5px;
+  background-color: #f6f6f6;
+  font-size: 90%;
 
 }
 
-div.column1 {
+div.category1_item {
   border: none;
   padding: 5px;
   margin: 5px;
 }
 
-div.grid-container2 {
+div.Contents {
   display: grid;
-  grid-template-columns: 300px auto;
+  grid-template-columns: 200px auto;
 }
 
-div.column2 {
-  border: solid 2px black;
-  padding: 5px;
-  margin: 5px;
+div.category2 {
+  border-right: solid 2px gray;
+  padding: 0px;
+  margin: 15px 5px 5px 5px;
   height: 470px;
   text-align: center;
 }
 
 div.column3 {
-  border: solid 2px black;
+
   padding: 20px;
   margin: 5px;
   height: 440px;
@@ -149,4 +168,8 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Gamja Flower', cursive;
+}
+.category2_linkcontainer {
+  item-style-type: none;
+  padding: 0;
 }
