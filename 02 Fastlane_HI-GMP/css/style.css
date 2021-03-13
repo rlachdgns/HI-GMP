@@ -1,0 +1,242 @@
+a {
+  text-decoration: none;
+  cursor: grab;
+}
+
+
+/* unvisited link */
+a:link {
+  color: #487e95;
+}
+
+/* visited link */
+a:visited {
+  color: #487e95;
+}
+
+/* mouse over link */
+h1:hover{
+  color: #78c4d4;
+}
+a.bar_link:hover {
+  background: #28527a;
+  display: block;
+  padding: 0px;
+  color: white;
+}
+
+a.contents_item_link:hover {
+  background: #e7e6e1;
+  border-radius: 0;
+  display: block;
+  margin: 0;
+  color: #184d47;
+}
+
+
+/* selected link */
+a:active {
+  color: gray;
+}
+/* ============    */
+a.current_link {
+  background: #e7e6e1;
+  border-radius: 0;
+  display: block;
+  margin: 0;
+  color: #184d47;
+}
+
+a.bar_link {
+  line-height: 4.2;
+}
+
+body {
+  background-color: white;
+  color: #487e95;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  font-weight: bold;
+}
+
+body.indexbody {
+  text-align: center;
+}
+
+#BUTTON_TQS {
+   background: #3DF6E1;
+   background-image: -webkit-linear-gradient(top, #3DF6E1, rgba(71, 99, 100, 0.6));
+   background-image: -moz-linear-gradient(top, #3DF6E1, rgba(71, 99, 100, 0.6));
+   background-image: -ms-linear-gradient(top, #3DF6E1, rgba(71, 99, 100, 0.6));
+   background-image: -o-linear-gradient(top, #3DF6E1, rgba(71, 99, 100, 0.6));
+   background-image: -webkit-gradient(to bottom, #3DF6E1, rgba(71, 99, 100, 0.6));
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: white;
+   font-family: Arial;
+   font-size: 15px;
+   font-weight: 100;
+   padding: 20px;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: -8px 12px 40px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+#BUTTON_TQS:hover {
+   border: solid #337FED 1px;
+   background: #17E5F1;
+   background-image: -webkit-linear-gradient(top, #17E5F1, #77E4CD);
+   background-image: -moz-linear-gradient(top, #17E5F1, #77E4CD);
+   background-image: -ms-linear-gradient(top, #17E5F1, #77E4CD);
+   background-image: -o-linear-gradient(top, #17E5F1, #77E4CD);
+   background-image: -webkit-gradient(to bottom, #17E5F1, #77E4CD);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+div.header {
+
+  padding: 5px;
+  border-bottom: none;
+  text-align: center;
+  position: relative;
+}
+
+div.middle-container {
+  margin-top: 50px;
+}
+
+div.bottom-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+div.bar {
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: 500px auto 80px 80px 80px 80px 80px 100px;
+  text-align: center;
+
+  border-bottom: solid 2px gray;
+  margin: 0;
+  background-color: #e4fbff;
+  font-size: 90%;
+  height: 60px;
+
+}
+
+div.bar_item {
+  border: none;
+  width: 80px;
+  padding: 0;
+  margin: auto;
+
+}
+
+div.contents {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+
+div.contents_item {
+  border-right: solid 2px gray;
+  padding: 0px;
+  margin: 15px 5px 5px 5px;
+  height: 800px;
+  text-align: center;
+}
+
+div.contents_description {
+  padding: 20px;
+  margin: 5px;
+  height: 440px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 50%;
+}
+
+img.HI-GMP-Suna1 {
+  height: 40px;
+  width: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 17px;
+  border-radius: 40px;
+}
+
+img.HI-GMP-Suna2 {
+  height: 300px;
+  width: 70%;
+  display: block;
+  border: solid 2px white;
+  border-radius: 1000px;
+}
+
+li {
+  padding-bottom: 4px;
+}
+
+hr {
+  border: 10px dotted;
+  border-top: 0;
+  display: inline-block;
+  width: 200px;
+  margin-top: 100px;
+  color: #dddddd;
+}
+
+h1 {
+  color: #487e95;
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  left: 70px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Gamja Flower', cursive;
+}
+
+ul.contents_item_linkcontainer {
+  item-style-type: none;
+  padding: 0;
+}
+span.index_description {
+  color: #78c4d4;
+}
+.button_NightandDay {
+  position: fixed;
+  right: 80px;
+  bottom: 100px;
+  border: solid 2px;
+  padding: 10px 10px 10px;
+  background-color: white;
+  color: #28527a;
+  margin: auto;
+  height: 50px;
+  font-weight: bold;
+}
+#current_bar_link {
+  background: #78c4d4;
+  border-radius: 0;
+  display: block;
+  margin: 0;
+  color: white;
+}
