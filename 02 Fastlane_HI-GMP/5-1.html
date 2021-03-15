@@ -8,6 +8,18 @@
   <link rel="icon" href="image/favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+  <script>
+    function modalOn() {
+      document.getElementById("myModal").style.display = 'block';
+    }
+
+    function modalOff() {
+      document.getElementById("myModal").style.display = 'none';
+    }
+  </script>
+
+
 </head>
 
 <body>
@@ -35,16 +47,45 @@
   <div class="contents">
     <div class="contents_item">
       <ul class="contents_item_linkcontainer">
-        <li><a class="current_link" href="5-1.html">GMP EYE</a></li>
-        <li><a href="5-2.html">SUREGMP</a></li>
-        <li><a href="5-3.html">ECA ACADEMY</a></li>
-        <li><a href="5-4.html">GMP in naver</a></li>
-        <li><a href="5-5.html">제약회사에 대한 모든 것</a></li>
+        <li><a class="current_link" href="5-1.html">참조 사이트</a></li>
       </ul>
 
     </div>
     <div class="contents_description">
-      gmp eye
+      <h3>교육</h3>
+
+      <ul>
+        <li>
+          <button id="myBtn" type="button" class="btn_site" onclick="modalOn()">한국GMP 아카데미</button>
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close" onclick="modalOff()">&times;</span>
+              <p>Description about GMP ACADEMY</p>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+
+      <h3>카페</h3>
+      <ul>
+        <li>GMP in naver</li>
+        <li>제약회사에 대한 모든 것</li>
+      </ul>
+      <h3>약전관련</h3>
+      <ul>
+        <li>신일서적</li>
+      </ul>
+      <h3>기타</h3>
+      <ul>
+        <li>gmp eye</li>
+        <li>SUREGMP</li>
+        <li>ECA ACADEMY</li>
+      </ul>
+
+
 
     </div>
 
