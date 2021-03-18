@@ -39,6 +39,7 @@ a:active {
   color: gray;
 }
 /* ============    */
+
 a.current_link {
   background: #e7e6e1;
   border-radius: 0;
@@ -46,6 +47,7 @@ a.current_link {
   margin: 0;
   color: #184d47;
 }
+
 
 a.bar_link {
   line-height: 4.2;
@@ -59,7 +61,8 @@ body {
   font-weight: bold;
 }
 
-body.indexbody {
+.indexbody {
+
   text-align: center;
 }
 
@@ -121,7 +124,7 @@ div.bottom-container {
 }
 
 div.bar {
-  position: sticky;
+  position: relative;
   top: 0;
   display: grid;
   grid-template-columns: 500px auto 80px 80px 80px 80px 80px 100px;
@@ -292,4 +295,16 @@ span.index_description {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .contents_item {
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 800px){
+  .bar_item {
+    display: none;
+  }
 }
