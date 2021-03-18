@@ -19,13 +19,13 @@ h1:hover{
   color: #78c4d4;
 }
 a.bar_link:hover {
-  background: #28527a;
+
   display: block;
   padding: 0px;
-  color: white;
+  color: #78c4d4;
 }
 
-a.category2_link:hover {
+a.contents_item_link:hover {
   background: #e7e6e1;
   border-radius: 0;
   display: block;
@@ -39,6 +39,7 @@ a:active {
   color: gray;
 }
 /* ============    */
+
 a.current_link {
   background: #e7e6e1;
   border-radius: 0;
@@ -46,6 +47,7 @@ a.current_link {
   margin: 0;
   color: #184d47;
 }
+
 
 a.bar_link {
   line-height: 4.2;
@@ -59,8 +61,49 @@ body {
   font-weight: bold;
 }
 
-body.indexbody {
+.indexbody {
+
   text-align: center;
+}
+
+#BUTTON_TQS {
+   background: #3DF6E1;
+   background-image: -webkit-linear-gradient(top, #3DF6E1, rgba(71, 99, 100, 0.6));
+   background-image: -moz-linear-gradient(top, #3DF6E1, rgba(71, 99, 100, 0.6));
+   background-image: -ms-linear-gradient(top, #3DF6E1, rgba(71, 99, 100, 0.6));
+   background-image: -o-linear-gradient(top, #3DF6E1, rgba(71, 99, 100, 0.6));
+   background-image: -webkit-gradient(to bottom, #3DF6E1, rgba(71, 99, 100, 0.6));
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: white;
+   font-family: Arial;
+   font-size: 15px;
+   font-weight: 100;
+   padding: 20px;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: -8px 12px 40px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+#BUTTON_TQS:hover {
+   border: solid #337FED 1px;
+   background: #17E5F1;
+   background-image: -webkit-linear-gradient(top, #17E5F1, #77E4CD);
+   background-image: -moz-linear-gradient(top, #17E5F1, #77E4CD);
+   background-image: -ms-linear-gradient(top, #17E5F1, #77E4CD);
+   background-image: -o-linear-gradient(top, #17E5F1, #77E4CD);
+   background-image: -webkit-gradient(to bottom, #17E5F1, #77E4CD);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
 }
 
 div.header {
@@ -81,10 +124,10 @@ div.bottom-container {
 }
 
 div.bar {
-  position: sticky;
+  position: relative;
   top: 0;
   display: grid;
-  grid-template-columns: 500px auto 80px 80px 80px 80px 80px 80px;
+  grid-template-columns: 500px auto 80px 80px 80px 80px 80px 100px;
   text-align: center;
 
   border-bottom: solid 2px gray;
@@ -99,23 +142,24 @@ div.bar_item {
   border: none;
   width: 80px;
   padding: 0;
+  margin: auto;
 
 }
 
-div.Contents {
+div.contents {
   display: grid;
   grid-template-columns: 200px auto;
 }
 
-div.category2 {
+div.contents_item {
   border-right: solid 2px gray;
   padding: 0px;
   margin: 15px 5px 5px 5px;
-  height: 470px;
+  height: 800px;
   text-align: center;
 }
 
-div.column3 {
+div.contents_description {
   padding: 20px;
   margin: 5px;
   height: 440px;
@@ -173,18 +217,94 @@ h1 {
   font-family: 'Gamja Flower', cursive;
 }
 
-ul.category2_linkcontainer {
+ul.contents_item_linkcontainer {
   item-style-type: none;
   padding: 0;
 }
 span.index_description {
   color: #78c4d4;
 }
+.button_NightandDay {
+  position: fixed;
+  right: 80px;
+  bottom: 100px;
+  border: solid 2px;
+  padding: 10px 10px 10px;
+  background-color: white;
+  color: #28527a;
+  margin: auto;
+  height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn_site {
+  border: none;
+  background-color: white;
+  color: #487e95;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.btn_site:hover {
+  cursor: grab;
 
+}
 #current_bar_link {
   background: #78c4d4;
   border-radius: 0;
   display: block;
   margin: 0;
   color: white;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .contents_item {
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 800px){
+  .bar_item {
+    display: none;
+  }
 }

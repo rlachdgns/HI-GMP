@@ -8,6 +8,9 @@
   <link rel="icon" href="image/favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+
+
 </head>
 
 <body>
@@ -30,17 +33,19 @@
     <div class="bar_item"><a class="bar_link" href="3-1.html">Guideline</a></div>
     <div class="bar_item"><a class="bar_link" href="4-1.html">GMP 약전</a></div>
     <div class="bar_item"><a class="bar_link" href="5-1.html">참조 사이트</a></div>
-    <div class="bar_item"></div>
+    <div class="bar_item">
+
+    </div>
 
   </div>
 
-  <div class="Contents">
-    <div class="category2">
-      <ul class="category2_linkcontainer">
+  <div class="contents">
+    <div class="contents_item">
+      <ul class="contents_item_linkcontainer">
         <li><a class="current_link" href="1-1.html">HI-GMP</a></li>
       </ul>
     </div>
-    <div class="column3">
+    <div class="contents_description">
       <p>
         GMP를 처음 접하는 사람, GMP에 대해 관심이 있는 사람, GMP에서 종사하고 있지만 기초에 대해 알고싶은 사람
         <br><br>
@@ -48,6 +53,29 @@
 
       </p>
 
+      <button type="button" title="다크모드로 보기"class="button_NightandDay"name="button" value="night" onclick="
+      if(document.querySelector('.button_NightandDay').value ==='night'){
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('.bar').style.backgroundColor='black';
+      document.querySelector('body').style.color='#78c4d4';
+      document.querySelector('.button_NightandDay').style.color='#78c4d4';
+      document.querySelector('.button_NightandDay').style.backgroundColor='black';
+
+      document.querySelector('.button_NightandDay').innerHTML = '라이트모드로 보기';
+      document.querySelector('.button_NightandDay').value='day'
+    }
+
+    else {
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('.bar').style.backgroundColor='#e4fbff';
+      document.querySelector('body').style.color='black';
+      document.querySelector('.button_NightandDay').style.color='black';
+      document.querySelector('.button_NightandDay').style.backgroundColor='white';
+      document.querySelector('.button_NightandDay').innerHTML = '다크모드로 보기';
+      document.querySelector('.button_NightandDay').value='night'
+    }
+
+      ">다크모드로 보기</button>
 
 
 
