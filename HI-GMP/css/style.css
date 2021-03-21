@@ -296,10 +296,19 @@ span.index_description {
   text-decoration: none;
   cursor: pointer;
 }
+.table1 {
+  width: 500px;
+  height: 500px;
+}
 
 @media only screen and (max-width: 700px) {
   .contents_item {
     display: none;
+  }
+  div.contents {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 50px;
   }
 
 }
