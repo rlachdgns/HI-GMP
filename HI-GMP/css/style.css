@@ -61,49 +61,29 @@ body {
   font-weight: bold;
 }
 
-.indexbody {
-
+.index-container {
+  border:1px solid white;
+  background-color:#e4fbff;
   text-align: center;
+  padding:40px ;
+  width: 800px;
+  margin: 30px auto;
 }
 
-#BUTTON_TQS {
-   background: #3DF6E1;
-   background-image: -webkit-linear-gradient(top, #3DF6E1, rgba(71, 99, 100, 0.6));
-   background-image: -moz-linear-gradient(top, #3DF6E1, rgba(71, 99, 100, 0.6));
-   background-image: -ms-linear-gradient(top, #3DF6E1, rgba(71, 99, 100, 0.6));
-   background-image: -o-linear-gradient(top, #3DF6E1, rgba(71, 99, 100, 0.6));
-   background-image: -webkit-gradient(to bottom, #3DF6E1, rgba(71, 99, 100, 0.6));
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   color: white;
-   font-family: Arial;
-   font-size: 15px;
-   font-weight: 100;
-   padding: 20px;
-   -webkit-box-shadow: 1px 1px 20px 0 #000000;
-   -moz-box-shadow: 1px 1px 20px 0 #000000;
-   box-shadow: 1px 1px 20px 0 #000000;
-   text-shadow: -8px 12px 40px #000000;
-   border: solid #337FED 1px;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center;
+#BUTTON_ORG {
+  border: 1px solid white;
+  border-radius: 40px;
+  padding:10px;
+  background-color: #387c6d;
+  color: white;
+
+
 }
 
-#BUTTON_TQS:hover {
-   border: solid #337FED 1px;
-   background: #17E5F1;
-   background-image: -webkit-linear-gradient(top, #17E5F1, #77E4CD);
-   background-image: -moz-linear-gradient(top, #17E5F1, #77E4CD);
-   background-image: -ms-linear-gradient(top, #17E5F1, #77E4CD);
-   background-image: -o-linear-gradient(top, #17E5F1, #77E4CD);
-   background-image: -webkit-gradient(to bottom, #17E5F1, #77E4CD);
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   text-decoration: none;
+#BUTTON_ORG:hover {
+  padding:13px;
+  background-color: #7eca9c;
+
 }
 
 div.header {
@@ -116,11 +96,15 @@ div.header {
 
 div.middle-container {
   margin-top: 50px;
+  height: auto;
 }
 
 div.bottom-container {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.bottom-container p {
+  display: inline;
 }
 
 div.bar {
@@ -185,14 +169,22 @@ img.HI-GMP-Suna1 {
   border-radius: 40px;
 }
 
-img.HI-GMP-Suna2 {
-  height: 300px;
-  width: 70%;
+img.suna2 {
+
+  height: 200px;
+  width: 200px;
   display: block;
   border: solid 2px white;
   border-radius: 1000px;
 }
 
+img.indeximage {
+
+  width: 200px;
+  height: 200px;
+  margin:0;
+  display: inline;
+}
 li {
   padding-bottom: 4px;
 }
@@ -312,7 +304,7 @@ span.index_description {
   }
 
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
   .bar_item {
     display: none;
   }
