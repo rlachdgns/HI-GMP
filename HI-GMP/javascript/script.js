@@ -9,7 +9,7 @@ function modalOff() {
 function NightandDay (){
   if(document.querySelector('.button_NightandDay').value ==='night'){
   document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('.navbar').style.backgroundColor='black';
+
   document.querySelector('body').style.color='#78c4d4';
   document.querySelector('.button_NightandDay').style.color='#78c4d4';
   document.querySelector('.button_NightandDay').style.backgroundColor='black';
@@ -20,7 +20,7 @@ function NightandDay (){
 
 else {
   document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('.navbar').style.backgroundColor='#e4fbff';
+
   document.querySelector('body').style.color='black';
   document.querySelector('.button_NightandDay').style.color='black';
   document.querySelector('.button_NightandDay').style.backgroundColor='white';

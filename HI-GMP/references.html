@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HI-GMP</title>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="image/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Javascript -->
+  <script src="javascript/script.js"></script>
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="HI-GMP">
+      <span class="HI-GMP_content1">
+        <img class="HI-GMP_sm" src="image/HI-GMP_sm.jpg" alt="oops">
+      </span>
+      <span class="HI-GMP_content2">
+        <a class="index" href="index.html">
+          <h1>HI-GMP <span class="index_description">(Your first GMP)</span></h1>
+        </a>
+      </span>
+    </div>
+    <div class="navbar_item_container">
+
+
+      <div class="navbar_item"><a class="navbar_link" href="higmp.html">HI-GMP</a></div>
+      <div class="navbar_item"><a class="navbar_link" href="guideline.html">Guideline</a></div>
+      <div class="navbar_item"><a class="navbar_link" href="pharmacopoeia.html">GMP 약전</a></div>
+      <div class="navbar_item"><a id="current_navbar_link" class="navbar_link" href="references.html">참조 사이트</a></div>
+      <div id="dropdown-container" class="navbar_item">
+        <button id="dropbtn" value="drop" type="button" name="button" onclick="dropdown()">
+          More <i id="down"class="fas fa-caret-down"></i><i id="up"class="fas fa-caret-up"></i>
+        </button>
+        <div id="dropdown-content-container" class="dropdown-content-container">
+          <div class="dropdown-content"><a class="dropdown-content-link" href="higmp.html">HI-GMP</a></div>
+          <div class="dropdown-content"><a class="dropdown-content-link" href="guideline.html">Guideline</a></div>
+          <div class="dropdown-content"><a class="dropdown-content-link" href="pharmacopoeia.html">GMP 약전</a></div>
+          <div class="dropdown-content"><a class="dropdown-content-link" href="references.html">참조 사이트</a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="contents">
+    <div class="contents_item">
+      <ul class="contents_item_linkcontainer">
+        <li><a class="current_link" href="references.html">참조 사이트</a></li>
+      </ul>
+
+    </div>
+    <div class="contents_description">
+      <h3>기관</h3>
+      <ul>
+        <li><a target="_blank" href="https://www.ich.org/">ICH (The International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use)</a></li>
+        <li><a target="_blank" href="https://picscheme.org/">PIC/S (Pharmaceutical Inspection Co-operation Scheme)</a></li>
+        <li><a target="_blank" href="https://www.who.int/">WHO (World Health Organization)</a></li>
+      </ul>
+      <h3>국가</h3>
+      <ul>
+        <li><a target="_blank" href="http://www.mfds.go.kr">대한민국 - MFDS (Ministry of Food and Drug Safety) </a> </li>
+        <li><a target="_blank" href="https://www.fda.gov/">미국 - FDA (U.S. Food and Drug Administration)</a></li>
+        <li><a target="_blank" href="https://www.ema.europa.eu/">유럽 - EMA (European Medicines Agency)</a></li>
+        <li><a target="_blank" href="https://www.pmda.go.jp/">일본 - PMDA (Pharmaceuticals and Medical Devices Agency)</a></li>
+        <li><a target="_blank" href="https://www.nmpa.gov.cn/">중국 - NMPA (National Medical Products Administration)</a></li>
+      </ul>
+
+      <h3>교육</h3>
+
+      <ul>
+        <li>
+          <button id="myBtn" type="button" class="btn_site" onclick="modalOn()">한국GMP 아카데미</button>
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close" onclick="modalOff()">&times;</span>
+              <p>Description about GMP ACADEMY</p>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+
+      <h3>카페</h3>
+      <ul>
+        <li>GMP in naver</li>
+        <li>제약회사에 대한 모든 것</li>
+      </ul>
+      <h3>약전관련</h3>
+      <ul>
+        <li>신일서적</li>
+      </ul>
+      <h3>기타</h3>
+      <ul>
+        <li>gmp eye</li>
+        <li>SUREGMP</li>
+        <li>ECA ACADEMY</li>
+      </ul>
+
+
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

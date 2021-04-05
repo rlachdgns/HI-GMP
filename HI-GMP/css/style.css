@@ -5,11 +5,11 @@ a {
 }
 
 a:link {
-  color: #487e95;
+  color: black;
 }
 
 a:visited {
-  color: #487e95;
+  color: black;
 }
 
 a.navbar_link:hover {
@@ -43,8 +43,8 @@ a.navbar_link {
 
 /* ------------------------------------------------------ */
 body {
-  background-color: white;
-  color: #487e95;
+  background-color: #f3f4ed;
+  color: black;
   font-family: 'Noto Sans KR', sans-serif;
   margin: 0;
   font-weight: bold;
@@ -83,13 +83,15 @@ button.btn_site:hover {
 /* ----------------div----------------- */
 div.index-container {
   border: 1px solid white;
-  background-color: #e4fbff;
   text-align: center;
-  padding: 40px;
-  width: 800px;
-  margin: 30px auto;
-}
 
+  margin:  0;
+}
+div.top-container {
+  background-color: #a3d2ca;
+  color: white;
+  padding: 20px 200px;
+}
 div.middle-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -107,9 +109,8 @@ div.navbar {
   position: relative;
   top: 0;
   text-align: center;
-  border-bottom: solid 2px gray;
   margin: 0;
-  background-color: #e4fbff;
+  background-color: white;
   font-size: 90%;
   height: 60px;
   min-width:720px;
@@ -152,17 +153,18 @@ div.contents {
 }
 
 div.contents_item {
-  border-right: solid 2px gray;
-  padding: 0px;
-  margin: 15px 5px 5px 5px;
+  background-color: #f3f4ed;
+  padding: 20px;
+  margin:15px;
   height: 800px;
   text-align: center;
 }
 
 div.contents_description {
+  background-color: white;
   padding: 20px;
-  margin: 5px;
-  height: 440px;
+  margin: 15px;
+  height: auto;
 }
 div.contents_description_picture {
   width: 300px;
@@ -204,7 +206,7 @@ div.modal-content {
 
 /* ---------------------------heading----------------------------*/
 h1 {
-  color: #487e95;
+  color: Black;
   display: inline-block;
   position: absolute;
   top: 12px;
@@ -213,23 +215,19 @@ h1 {
   margin-bottom: 0;
   font-family: 'Gamja Flower', cursive;
 }
+h1.h1_index {
+  color: white;
+  display: inline-block;
+}
 
 h1:hover {
-  color: #78c4d4;
+  color: #f3f4ed;
 }
 
 h2 {
   text-align: left;
 }
 
-hr {
-  border: 10px dotted;
-  border-top: 0;
-  display: inline-block;
-  width: 200px;
-  margin-top: 100px;
-  color: #dddddd;
-}
 
 /* ----------------Image---------------- */
 img {
@@ -306,11 +304,12 @@ span.close:focus {
 }
 
 span.index_description {
-  color: #78c4d4;
+  color: black;
 }
 
 ul.contents_item_linkcontainer {
-  item-style-type: none;
+  list-style: none;
+
   padding: 0;
 }
 
@@ -319,8 +318,8 @@ ul.contents_item_linkcontainer {
   border: 1px solid white;
   border-radius: 40px;
   padding: 10px;
-  background-color: #387c6d;
-  color: white;
+  background-color: #a3d2ca;
+  color: #eeebdd;
 }
 
 #BUTTON_ORG:hover {
@@ -331,9 +330,7 @@ ul.contents_item_linkcontainer {
 #higmp {
   display: grid;
   grid-template-columns: auto auto;
-  padding: 20px;
-  margin: 5px;
-  height: 440px;
+
 }
 
 #current_navbar_link {
