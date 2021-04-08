@@ -93,8 +93,7 @@ div.top-container {
   padding: 20px 200px;
 }
 div.middle-container {
-  display: grid;
-  grid-template-columns: auto auto;
+
   margin-top: 50px;
   height: auto;
 }
@@ -259,7 +258,7 @@ img.suna2 {
 }
 
 img.children {
-  padding: 0 40px 0 100px;
+
 }
 
 img.indeximage {
@@ -318,8 +317,11 @@ ul.contents_item_linkcontainer {
   border: 1px solid white;
   border-radius: 40px;
   padding: 10px;
+  margin: 0px;
   background-color: #a3d2ca;
   color: #eeebdd;
+  height: 30px;
+  width: 500px;
 }
 
 #BUTTON_ORG:hover {
