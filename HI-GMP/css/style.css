@@ -112,13 +112,12 @@ div.navbar {
   background-color: white;
   font-size: 90%;
   height: 60px;
-  min-width:720px;
 }
 div.HI-GMP {
   padding: 5px;
   border-bottom: none;
   text-align: center;
-  width: 350px;
+
 }
 div.navbar_item_container {
   display: inline-block;
@@ -166,7 +165,7 @@ div.contents_description {
   height: auto;
 }
 div.contents_description_picture {
-  width: 300px;
+
 }
 
 /* ----------------------Modal---------------------- */
@@ -321,7 +320,6 @@ ul.contents_item_linkcontainer {
   background-color: #a3d2ca;
   color: #eeebdd;
   height: 30px;
-  width: 500px;
 }
 
 #BUTTON_ORG:hover {
@@ -369,7 +367,7 @@ ul.contents_item_linkcontainer {
     padding: 50px;
   }
   div.contents_description_text {
-    width: 300px;
+
   }
   /* #dropbtn {
     display: block;
@@ -399,5 +397,10 @@ a.navbar_link {
 @media only screen and (max-width: 580px){
   .hide {
     display: none;
+  }
+}
+@media only screen and (max-width: 800px){
+  #higmp {
+    display: block;
   }
 }
