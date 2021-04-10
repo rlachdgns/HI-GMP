@@ -105,8 +105,7 @@ div.bottom-container {
 
 
 div.navbar {
-  position: relative;
-  top: 0;
+
   text-align: center;
   margin: 0;
   background-color: white;
@@ -114,15 +113,13 @@ div.navbar {
   height: 60px;
 }
 div.HI-GMP {
-  padding: 5px;
-  border-bottom: none;
-  text-align: center;
+  display: inline-block;
 
 }
 div.navbar_item_container {
   display: inline-block;
   float: right;
-  margin-right: 50px;
+  margin: 10px 50px 0 0;
 }
 div.navbar_item {
   text-align: center;
@@ -161,7 +158,7 @@ div.contents_item {
 div.contents_description {
   background-color: white;
   padding: 20px;
-  margin: 15px;
+  margin: 15px 5px;
   height: auto;
 }
 div.contents_description_picture {
