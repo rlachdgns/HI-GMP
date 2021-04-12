@@ -105,12 +105,11 @@ div.bottom-container {
 
 
 div.navbar {
-
-  text-align: center;
   margin: 0;
+  padding:1%;
   background-color: white;
   font-size: 90%;
-  height: 60px;
+  height: 3rem;
 }
 div.HI-GMP {
   display: inline-block;
@@ -118,8 +117,8 @@ div.HI-GMP {
 }
 div.navbar_item_container {
   display: inline-block;
-  float: right;
-  margin: 10px 50px 0 0;
+  position: absolute;
+  right: 3px;
 }
 div.navbar_item {
   text-align: center;
@@ -131,6 +130,8 @@ div.navbar_item {
 }
 div.dropdown-content-container {
   display: none;
+  position: absolute;
+  right: 5px;
 
 }
 div.dropdown-content{
@@ -203,12 +204,8 @@ div.modal-content {
 h1 {
   color: Black;
   display: inline-block;
-  position: absolute;
-  top: 12px;
-  left: 70px;
-  margin-top: 0;
-  margin-bottom: 0;
   font-family: 'Gamja Flower', cursive;
+  margin: 0 1rem;
 }
 h1.h1_index {
   color: white;
@@ -226,22 +223,17 @@ h2 {
 
 /* ----------------Image---------------- */
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+
+
   width: 50%;
 }
 
 img.HI-GMP_sm {
+  float: left;
   height: 40px;
   width: 40px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   display: inline-block;
-  position: absolute;
-  top: 10px;
-  left: 17px;
   border-radius: 40px;
 }
 
@@ -298,9 +290,7 @@ span.close:focus {
   cursor: pointer;
 }
 
-span.index_description {
-  color: black;
-}
+
 
 ul.contents_item_linkcontainer {
   list-style: none;
@@ -341,7 +331,7 @@ ul.contents_item_linkcontainer {
   display: none;
   background-color: white;
   border:none;
-  color: #487e95;
+  color: black;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 12  0%;
   font-weight: bold;
@@ -360,13 +350,12 @@ ul.contents_item_linkcontainer {
 
   div.contents {
     display: grid;
-    grid-template-columns: auto;
-    padding: 50px;
+    grid-template-columns: auto
   }
   div.contents_description_text {
 
   }
-  /* #dropbtn {
+  #dropbtn {
     display: block;
 }
 
@@ -377,10 +366,10 @@ a.navbar_link {
 #current_navbar_link {
   display: none;
 }
-} */
+}
 
 @media only screen and (min-width: 900px){
-  /* #dropbtn, #dropdown-container{
+  #dropbtn, #dropdown-container{
     display: none;
 }
 .navbar_link {
@@ -389,7 +378,7 @@ a.navbar_link {
 #current_navbar_link {
   display: block;
 }
-} */
+}
 }
 @media only screen and (max-width: 580px){
   .hide {
